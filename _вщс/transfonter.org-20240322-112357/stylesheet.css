@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: local('Alegreya Sans SC Light'), local('AlegreyaSansSC-Light'),
+        url('AlegreyaSansSC-Light.woff2') format('woff2'),
+        url('AlegreyaSansSC-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: local('Alegreya Sans SC Medium'), local('AlegreyaSansSC-Medium'),
+        url('AlegreyaSansSC-Medium.woff2') format('woff2'),
+        url('AlegreyaSansSC-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: local('Alegreya Sans SC Bold'), local('AlegreyaSansSC-Bold'),
+        url('AlegreyaSansSC-Bold.woff2') format('woff2'),
+        url('AlegreyaSansSC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: local('Alegreya Sans SC Regular'), local('AlegreyaSansSC-Regular'),
+        url('AlegreyaSansSC-Regular.woff2') format('woff2'),
+        url('AlegreyaSansSC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

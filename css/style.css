@@ -17,16 +17,79 @@
 
 
 */
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  src: local('Alegreya Sans SC Light'), local('AlegreyaSansSC-Light'), url('../fonts/AlegreyaSansSC-Light.woff2') format('woff2'), url('../fonts/AlegreyaSansSC-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  src: local('Alegreya Sans SC Medium'), local('AlegreyaSansSC-Medium'), url('../fonts/AlegreyaSansSC-Medium.woff2') format('woff2'), url('../fonts/AlegreyaSansSC-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  src: local('Alegreya Sans SC Bold'), local('AlegreyaSansSC-Bold'), url('../fonts/AlegreyaSansSC-Bold.woff2') format('woff2'), url('../fonts/AlegreyaSansSC-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  src: local('Alegreya Sans SC Regular'), local('AlegreyaSansSC-Regular'), url('../fonts/AlegreyaSansSC-Regular.woff2') format('woff2'), url('../fonts/AlegreyaSansSC-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('Montserrat-Bold.woff2') format('woff2'), url('Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('Montserrat-Light.woff2') format('woff2'), url('Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url('Montserrat-SemiBold.woff2') format('woff2'), url('Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('Montserrat-Regular.woff2') format('woff2'), url('Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .ft,
 .ft *,
 .ftb {
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .ftb {
   font-weight: 500;
 }
 .ftb * {
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .fm {
   font-family: 'Montserrat', sans-serif;
@@ -186,7 +249,7 @@
   z-index: 3;
   font-size: 60px;
   color: var(--clr-att);
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 500;
 }
 .item-tile-tarif {
@@ -310,7 +373,7 @@
   padding: 0 10px 0 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 500;
 }
 .item-tile-tarif .tile-info-title {
@@ -398,7 +461,7 @@
   width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .item-tile-category-main .tile-text {
   display: none;
@@ -541,7 +604,7 @@
 }
 .header .phone-wrap {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Montserrat', sans-serif;
 }
 .header .phone-wrap * {
@@ -636,7 +699,7 @@
   white-space: normal;
 }
 .main-tiles-box .items-tarif ~ .more-box .btn * {
-  font-family: Alegreya Sans SC, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .main-tiles-box .items-catalog {
   margin: 0 -5px -10px -5px;
