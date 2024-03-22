@@ -336,7 +336,7 @@
 		z-index: 3;
 		background: #FAFAFA;
 		background: transparent;
-		padding: 10px 2.4rem 2.4rem 2.4rem;
+		padding: 10px 15px 2.4rem 15px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -459,6 +459,11 @@
 	border-bottom: 2px solid var(--clr-att-light);
 	margin: 0;
 	position: relative;
+	.logo {
+		.logo-title {
+			text-align: right;
+		}
+	}
 	.menu-button {
 		.btn-action-ico.ico-menu {
 			width: 45px;height: 45px;
@@ -482,6 +487,9 @@
 	}
 }
 .main-order-box {
+	&.section-third {
+		margin-top: 0;
+	}
 	.popup-form-box {
 		max-width: 814px;
 		margin-left: auto;
@@ -691,6 +699,9 @@
 		font-weight: 600;
 		min-height: 0;
 	}
+}
+.mb-50 {
+	margin-bottom: 5rem !important;
 }
 @media (max-width: 1023px) {
 

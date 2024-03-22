@@ -379,8 +379,8 @@
   z-index: 3;
   background: #FAFAFA;
   background: transparent;
-  padding: 10px 38.4px 38.4px 38.4px;
-  padding: 10px 2.4rem 2.4rem 2.4rem;
+  padding: 10px 15px 38.4px 15px;
+  padding: 10px 15px 2.4rem 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -520,6 +520,9 @@
   margin: 0;
   position: relative;
 }
+.header .logo .logo-title {
+  text-align: right;
+}
 .header .menu-button .btn-action-ico.ico-menu {
   width: 45px;
   height: 45px;
@@ -543,6 +546,9 @@
 }
 .header .phone-wrap * {
   font-family: 'Montserrat', sans-serif;
+}
+.main-order-box.section-third {
+  margin-top: 0;
 }
 .main-order-box .popup-form-box {
   max-width: 814px;
@@ -749,6 +755,10 @@
   text-transform: uppercase;
   font-weight: 600;
   min-height: 0;
+}
+.mb-50 {
+  margin-bottom: 80px !important;
+  margin-bottom: 5rem !important;
 }
 @media (max-width: 1023px) {
   .button-round.button-round-animate {
