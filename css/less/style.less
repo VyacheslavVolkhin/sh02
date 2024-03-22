@@ -735,6 +735,30 @@
 	&.section-bg-att {
 		background-color: #FCEDF3;
 		padding: 6rem 0;
+		z-index: 2;
+		&:before, &:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 60px;
+			left: 50%;
+			margin-left: -1000px;
+			width: 458px;
+			height: 180px;
+			background: url(../img/decor-att.svg) 0 0 no-repeat;
+			background-size: 100% auto;
+			pointer-events: none;
+			z-index: -1;
+		}
+		&:after {
+			left: auto;
+			right: 50%;
+			margin: 0 -1000px 0 0;
+			top: auto;
+			bottom: 60px;
+			background-image: url(../img/decor-att-second.svg);
+			width: 463px;height: 116px;
+		}
 	}
 	&.section-bg-gray {
 		background-color: #F9F9F9;
@@ -945,6 +969,7 @@
 .mb-50 {
 	margin-bottom: 5rem !important;
 }
+
 @media (max-width: 1023px) {
 	.item-tile-catalog-main {
 		.tile-info-wrap {
@@ -1065,6 +1090,20 @@
 						width: auto;
 					}
 				}
+			}
+		}
+	}
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+	.main-tiles-box {
+		&.section-bg-att {
+			&:before {
+				left: -200px;
+				margin: 0;
+			}
+			&:after {
+				right: -200px;
+				margin: 0;
 			}
 		}
 	}
