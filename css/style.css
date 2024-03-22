@@ -518,9 +518,12 @@
 }
 .item-tile-category-main:hover .tile-title-wrap {
   top: 0;
-  background: rgba(153, 24, 80, 0.45);
+  background: none;
   padding: 38.4px;
   padding: 2.4rem;
+}
+.item-tile-category-main:hover .tile-title-wrap:after {
+  opacity: 1;
 }
 .item-tile-category-main:hover .tile-title-wrap .tile-title {
   color: #fff;
@@ -553,6 +556,18 @@
   -ms-flex-direction: column;
       flex-direction: column;
 }
+.item-tile-category-main .tile-title-wrap:after {
+  background: rgba(153, 24, 80, 0.45);
+  transition: all ease 0.2s;
+  opacity: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .item-tile-category-main .tile-title {
   font-size: 38.4px;
   font-size: 2.4rem;
@@ -565,6 +580,8 @@
   width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
+  z-index: 2;
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 .item-tile-category-main .tile-text {
@@ -581,6 +598,8 @@
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  position: relative;
+  z-index: 2;
 }
 .item-tile-category-main .tile-text::-webkit-scrollbar {
   width: 0;
@@ -591,6 +610,8 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: none;
+  position: relative;
+  z-index: 2;
 }
 .item-tile-category-main .tile-action .btn {
   height: 42px;
@@ -606,8 +627,11 @@
   position: relative;
 }
 .item-tile-catalog.tile-main:hover .tile-title-wrap {
-  background: rgba(153, 24, 80, 0.45);
   top: 15px;
+  background: none;
+}
+.item-tile-catalog.tile-main:hover .tile-title-wrap:after {
+  opacity: 1;
 }
 .item-tile-catalog.tile-main:hover .tile-title-wrap .tile-title {
   color: #fff;
@@ -637,6 +661,18 @@
   -ms-flex-pack: center;
       justify-content: center;
 }
+.item-tile-catalog.tile-main .tile-title-wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: rgba(153, 24, 80, 0.45);
+  transition: all ease 0.2s;
+}
 .item-tile-catalog.tile-main .tile-title-wrap:before {
   content: "";
   display: block;
@@ -658,6 +694,8 @@
   width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 .item-tile-catalog.tile-main .tile-action {
   display: none;

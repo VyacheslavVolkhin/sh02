@@ -499,8 +499,11 @@
 	&:hover {
 		.tile-title-wrap {
 			top: 0;
-			background: fade(#991850, 45);
+			background: none;
 			padding: 2.4rem;
+			&:after {
+				opacity: 1;
+			}
 			.tile-title {
 				color: #fff;
 			}
@@ -528,6 +531,18 @@
 		padding: 10px 15px 2.4rem 15px;
 		display: flex;
 		flex-direction: column;
+		&:after {
+			background: fade(#991850, 45);
+			transition: all ease 0.2s;
+			opacity: 0;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
 	}
 	.tile-title {
 		font-size: 2.4rem;
@@ -539,6 +554,8 @@
 		text-transform: uppercase;
 		width: 100%;
 		flex-shrink: 0;
+		position: relative;
+		z-index: 2;
 		.ft;
 	}
 	.tile-text {
@@ -554,6 +571,8 @@
 		overflow-x: hidden;
 		scrollbar-width: none;
 		-ms-overflow-style: none;
+		position: relative;
+		z-index: 2;
 		&::-webkit-scrollbar {
 			width: 0;
 			height: 0;
@@ -563,6 +582,8 @@
 		width: 100%;
 		flex-shrink: 0;
 		display: none;
+		position: relative;
+		z-index: 2;
 		.btn {
 			height: 42px;
 			padding: 0 4.4rem;
@@ -579,8 +600,11 @@
 		position: relative;
 		&:hover {
 			.tile-title-wrap {
-				background: rgba(153, 24, 80, 0.45);
 				top: 15px;
+				background: none;
+				&:after {
+					opacity: 1;
+				}
 				.tile-title {
 					color: #fff;
 				}
@@ -603,6 +627,18 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				opacity: 0;
+				background: rgba(153, 24, 80, 0.45);
+				transition: all ease 0.2s;
+			}
 			&:before {
 				content: "";
 				display: block;
@@ -621,6 +657,8 @@
 			text-align: center;
 			width: 100%;
 			flex-shrink: 0;
+			position: relative;
+			z-index: 2;
 		}
 		.tile-action {
 			display: none;
