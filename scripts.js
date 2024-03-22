@@ -40,5 +40,25 @@ $(document).ready(function(){
 		});
 		
 	}
+
+	//item-tile-catalog-main
+	if (!!$('.item-tile-catalog-main').offset()) {
+		$('.item-tile-catalog-main .tile-slider').slick({
+			dots: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			touchThreshold: 100,
+			variableWidth: false,
+			infinite: true,
+			adaptiveHeight: false,
+			rows: 1,
+			swipeToSlide: true,
+			autoplay: false,
+			autoplaySpeed: 5000,
+			prevArrow: false,
+			nextArrow: false,
+		});
+		
+	}
 	
 });
