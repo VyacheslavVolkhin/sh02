@@ -963,6 +963,9 @@ table.tbl-info tr:nth-child(2n) th {
 .breadcrumbs-box a:not(:hover) {
   color: inherit;
 }
+.main-order-box.section-space-small {
+  padding: 28px 0;
+}
 .main-order-box .box-inner-wrap.form-row {
   display: -ms-flexbox;
   display: flex;
